@@ -1,13 +1,13 @@
 // Dummy data untuk user
-const users = [
+const book = [
   { id: 1, name: "Alice" },
   { id: 2, name: "Bob" },
 ];
 
 // Fungsi untuk mengambil semua user
-const findAllBooks = () => users;
+const findAllBooks = () => book;
 
 // Fungsi untuk mengambil user berdasarkan ID
-const findBookById = (id) => users.find((user) => user.id === id);
+const findBookById = (id) => book.find((book) => book.id === id);
 
 export { findAllBooks, findBookById };
