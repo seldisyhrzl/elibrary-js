@@ -1,6 +1,8 @@
-const logRequest = (req, res, next) => {
-  console.log(`a Request to path ${req.path}`);
-  next();
-};
+import express from "express";
+import morgan from "morgan";
+
+const app = express();
+
+const logRequest = app.use(morgan("dev"));
 
 export default logRequest;
